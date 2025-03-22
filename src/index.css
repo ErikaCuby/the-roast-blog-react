@@ -1,8 +1,8 @@
 /* Light Mode (Default) */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #F8F2ED;
-  color: #4A4A4A;
+  background-color: #f8f2ed;
+  color: #4a4a4a;
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
@@ -10,8 +10,8 @@ body {
 
 /* Dark Mode */
 body.dark-mode {
-  background-color: #2D2D2D;
-  color: #EAEAEA;
+  background-color: #2d2d2d;
+  color: #eaeaea;
 }
 
 /* Container */
@@ -25,7 +25,6 @@ body.dark-mode {
   opacity: 0;
   animation: fadeIn 0.6s ease-in forwards;
 }
-
 
 /* Fade-in Animation */
 @keyframes fadeIn {
@@ -41,12 +40,16 @@ body.dark-mode {
 
 /* Header */
 .header {
-  background-color: #D6A5C0;
+  background-color: #d6a5c0;
   color: white;
   padding: 15px;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
+}
+
+.header-h1 {
+  color: white;
 }
 
 .header nav {
@@ -89,7 +92,7 @@ body.dark-mode {
 
 .toggle-btn:hover {
   background: white;
-  color: #D6A5C0;
+  color: #d6a5c0;
 }
 
 /* Heading */
@@ -158,9 +161,9 @@ a:hover {
   text-align: center;
   padding: 15px;
   margin-top: 40px;
-  background-color: #EADBC8;
+  background-color: #eadbc8;
   font-size: 14px;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 .social-icons {
@@ -170,10 +173,79 @@ a:hover {
 .social-icons a {
   margin: 0 10px;
   font-size: 24px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #D6A5C0;
+  color: #d6a5c0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header ul li {
+    display: block;
+  }
+
+  .blog-list li {
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .social-icons {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .header nav {
+    flex-direction: column;
+  }
+
+  .header ul {
+    gap: 8px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .blog-list li {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
 }

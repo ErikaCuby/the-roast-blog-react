@@ -11,7 +11,6 @@ function Header() {
 
   return (
     <header className="header">
-      <h1>Luma & Erika Conversations</h1>
       <nav>
         <ul>
           <li>
@@ -28,6 +27,7 @@ function Header() {
           {isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
         </button>
       </nav>
+      <h1 className="header-h1">Luma & Erika Conversations</h1>
     </header>
   );
 }
