@@ -43,40 +43,48 @@ body.dark-mode {
   background-color: #d6a5c0;
   color: white;
   padding: 15px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 22px;
   font-weight: bold;
+  position: relative;
 }
 
 .header-h1 {
   color: white;
 }
 
-.header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header ul {
+/* Navigation */
+.nav-links ul {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 20px;
 }
 
-.header ul li {
+.nav-links ul li {
   display: inline;
 }
 
-.header ul li a {
+.nav-links ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.header ul li a:hover {
+.nav-links ul li a:hover {
   text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 /* Dark Mode Toggle Button */
@@ -198,18 +206,42 @@ a:hover {
     align-items: center;
   }
 
-  .header ul {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .header ul li {
+  .menu-toggle {
     display: block;
   }
 
-  .blog-list li {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #d6a5c0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    height: 150px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
     padding: 10px;
+    text-align: center;
+  }
+
+  .nav-links ul li {
+    margin: 10px 0;
+  }
+
+  /* Blog Images */
+  .blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .footer {

@@ -22,6 +22,9 @@ function BlogPost() {
       <p>
         <strong>Date:</strong> {post.date}
       </p>
+      {post.image && (
+        <img src={post.image} alt={post.title} className="blog-image" />
+      )}
       <p>{post.content}</p>
       <Link to="/" className="back-link">
         ← Back to Blog

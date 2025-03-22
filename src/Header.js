@@ -3,31 +3,45 @@ import { Link } from "react-router";
 
 function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
     document.body.classList.toggle("dark-mode");
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="header">
-      <nav>
+      <div className="logo">Luma & Erika Conversations</div>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </button>
+      <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={() => setMenuOpen(false)}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              Contact
+            </Link>
           </li>
         </ul>
         <button onClick={toggleDarkMode} className="toggle-btn">
           {isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
         </button>
       </nav>
-      <h1 className="header-h1">Luma & Erika Conversations</h1>
     </header>
   );
 }
