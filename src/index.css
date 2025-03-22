@@ -232,7 +232,7 @@ a:hover {
   }
 
   .nav-links.open {
-    height: 900vh;
+    height: 350px;
   }
 
   .nav-links ul {
@@ -266,6 +266,10 @@ a:hover {
 
   .header ul {
     gap: 8px;
+  }
+
+    .nav-links.open {
+    height: 270px;
   }
 
   .container {
