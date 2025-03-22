@@ -1,8 +1,8 @@
 /* Global Styles */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #F8F2ED;
-  color: #4A4A4A;
+  background-color: #f8f2ed;
+  color: #4a4a4a;
   margin: 0;
   padding: 0;
 }
@@ -15,12 +15,47 @@ body {
   background: white;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in forwards;
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.header {
+  background-color: #D6A5C0;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  background-color: #EADBC8;
+  font-size: 14px;
+  color: #4A4A4A;
 }
 
 /* Heading */
 h1 {
   font-size: 28px;
-  color: #D6A5C0;
+  color: #d6a5c0;
   text-align: center;
 }
 
@@ -33,7 +68,7 @@ h1 {
 .blog-list li {
   margin: 15px 0;
   padding: 15px;
-  border: 1px solid #EADBC8;
+  border: 1px solid #eadbc8;
   border-radius: 8px;
   background: white;
   transition: transform 0.2s ease-in-out;
@@ -46,7 +81,7 @@ h1 {
 /* Links */
 a {
   text-decoration: none;
-  color: #D6A5C0;
+  color: #d6a5c0;
   font-weight: bold;
 }
 
@@ -70,11 +105,10 @@ a:hover {
   display: block;
   text-align: center;
   margin-top: 20px;
-  color: #D6A5C0;
+  color: #d6a5c0;
   font-weight: bold;
 }
 
 .back-link:hover {
   text-decoration: underline;
 }
-
