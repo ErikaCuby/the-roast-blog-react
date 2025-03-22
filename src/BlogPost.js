@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router";
+import { motion } from "framer-motion";
 import blogPosts from "./blogPosts";
 
 function BlogPost() {
@@ -11,7 +12,12 @@ function BlogPost() {
   }
 
   return (
-    <div className="container blog-post">
+    <motion.div
+      className="container blog-post"
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       <h1>{post.title}</h1>
       <p>
         <strong>Date:</strong> {post.date}
@@ -20,7 +26,7 @@ function BlogPost() {
       <Link to="/" className="back-link">
         ← Back to Blog
       </Link>
-    </div>
+    </motion.div>
   );
 }
 
