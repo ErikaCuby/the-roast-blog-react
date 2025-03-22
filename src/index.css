@@ -1,10 +1,17 @@
-/* Global Styles */
+/* Light Mode (Default) */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f8f2ed;
-  color: #4a4a4a;
+  background-color: #F8F2ED;
+  color: #4A4A4A;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #2D2D2D;
+  color: #EAEAEA;
 }
 
 /* Container */
@@ -42,14 +49,47 @@ body {
   font-weight: bold;
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-  background-color: #EADBC8;
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header ul li {
+  display: inline;
+}
+
+.header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Toggle Button */
+.toggle-btn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
   font-size: 14px;
-  color: #4A4A4A;
+}
+
+.toggle-btn:hover {
+  background: white;
+  color: #D6A5C0;
 }
 
 /* Heading */
@@ -111,4 +151,29 @@ a:hover {
 
 .back-link:hover {
   text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  background-color: #EADBC8;
+  font-size: 14px;
+  color: #4A4A4A;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #4A4A4A;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #D6A5C0;
 }
