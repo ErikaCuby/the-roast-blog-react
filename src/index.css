@@ -1,13 +1,80 @@
+/* Global Styles */
 body {
+  font-family: "Arial", sans-serif;
+  background-color: #F8F2ED;
+  color: #4A4A4A;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
+
+/* Heading */
+h1 {
+  font-size: 28px;
+  color: #D6A5C0;
+  text-align: center;
+}
+
+/* Blog List */
+.blog-list {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-list li {
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #EADBC8;
+  border-radius: 8px;
+  background: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.blog-list li:hover {
+  transform: scale(1.02);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #D6A5C0;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Blog Post */
+.blog-post h1 {
+  font-size: 26px;
+  text-align: center;
+}
+
+.blog-post p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Back Link */
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #D6A5C0;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+

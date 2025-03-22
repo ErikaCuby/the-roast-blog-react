@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router";
 import blogPosts from "./blogPosts";
 
 function BlogPost() {
@@ -11,9 +11,15 @@ function BlogPost() {
   }
 
   return (
-    <div>
+    <div className="container blog-post">
       <h1>{post.title}</h1>
+      <p>
+        <strong>Date:</strong> {post.date}
+      </p>
       <p>{post.content}</p>
+      <Link to="/" className="back-link">
+        ← Back to Blog
+      </Link>
     </div>
   );
 }

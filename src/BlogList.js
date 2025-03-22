@@ -4,12 +4,13 @@ import blogPosts from "./blogPosts";
 
 function BlogList() {
   return (
-    <div>
-      <h1>The Roast Blog</h1>
-      <ul>
+    <div className="container">
+      <h1>Blog Posts</h1>
+      <ul className="blog-list">
         {blogPosts.map((post) => (
           <li key={post.id}>
             <Link to={`/blog/${post.id}`}>{post.title}</Link>
+            <p>{post.date}</p>
           </li>
         ))}
       </ul>
