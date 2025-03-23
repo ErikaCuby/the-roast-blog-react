@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, Link } from "react-router";
 import { motion } from "framer-motion";
 import blogPosts from "./blogPosts";
@@ -6,6 +6,25 @@ import blogPosts from "./blogPosts";
 function BlogPost() {
   const { postId } = useParams();
   const post = blogPosts.find((p) => p.id === postId);
+
+   useEffect(() => {
+     if (post) {
+       document.title = `${post.title} | The Roast Blog`;
+
+       const metaDesc = document.querySelector('meta[name="description"]');
+       if (metaDesc) {
+         metaDesc.setAttribute(
+           "content",
+           post.content.substring(0, 150) + "..."
+         );
+       } else {
+         const newMeta = document.createElement("meta");
+         newMeta.name = "description";
+         newMeta.content = post.content.substring(0, 150) + "...";
+         document.head.appendChild(newMeta);
+       }
+     }
+   }, [post]);
 
   if (!post) {
     return <h2>Post not found</h2>;

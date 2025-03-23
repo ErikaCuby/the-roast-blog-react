@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 import blogPosts from "./blogPosts";
 
 function BlogList() {
   const featuredPost = blogPosts[0]; // Display the first post as featured
+
+  useEffect(() => {
+    document.title = "The Roast Blog";
+    const meta = document.querySelector('meta[name="description"]');
+
+    if (meta) {
+      meta.setAttribute(
+        "content",
+        "A Millennial being roasted by AI on demand."
+      );
+    } else {
+      const newMeta = document.createElement("meta");
+      newMeta.name = "description";
+      newMeta.content = "A Millennial being roasted by AI on demand.";
+      document.head.appendChild(newMeta);
+    }
+  }, []);
 
   return (
     <motion.div
