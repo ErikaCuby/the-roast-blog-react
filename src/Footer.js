@@ -4,7 +4,18 @@ import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2025 Luma & Erika Blog. All rights reserved.</p>
+      <p>
+        © 2025 The Roast Blog. All rights reserved. Coded by{" "}
+        <a
+          href="https://www.erikakubickova.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Erika Cuby
+        </a>
+        .
+      </p>
       <div className="social-icons">
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
           <FaTwitter />
@@ -16,7 +27,11 @@ function Footer() {
         >
           <FaInstagram />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/ErikaCuby/the-roast-blog-react"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
         </a>
       </div>
