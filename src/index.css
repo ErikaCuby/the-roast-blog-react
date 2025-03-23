@@ -44,14 +44,17 @@ body.dark-mode {
 .header {
   background-color: #d6a5c0;
   color: white;
-  padding: 15px;
+  padding: 15px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 22px;
   font-weight: bold;
-  position: relative;
   font-family: "Playfair Display", serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .header-h1 {
@@ -236,9 +239,9 @@ a:hover {
 }
 
 .blog-post h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 26px;
-  color: #B97B9C;
+  color: #b97b9c;
   margin-top: 40px;
   margin-bottom: 16px;
   border-left: 4px solid #eadbc8;
@@ -247,19 +250,19 @@ a:hover {
 
 .blog-post blockquote {
   font-style: italic;
-  color: #6A5E56;
-  background: #F1E7E2;
-  border-left: 4px solid #D6A5C0;
+  color: #6a5e56;
+  background: #f1e7e2;
+  border-left: 4px solid #d6a5c0;
   padding: 16px 20px;
   margin: 24px 0;
   border-radius: 8px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   opacity: 0.8;
 }
 
 .blog-post ul {
-opacity: 0.8;
-list-style: '🌸 ';
+  opacity: 0.8;
+  list-style: "🌸 ";
 }
 
 .blog-post p {

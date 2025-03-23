@@ -63,8 +63,6 @@ function BlogList() {
                 />
                 <div>
                   <h3>{post.title}</h3>
-                  <p>{post.subtitle}</p>
-                  <p>{post.date}</p>
                 </div>
               </div>
             </Link>
