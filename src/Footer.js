@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -17,9 +17,6 @@ function Footer() {
         .
       </p>
       <div className="social-icons">
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter />
-        </a>
         <a
           href="https://instagram.com"
           target="_blank"
