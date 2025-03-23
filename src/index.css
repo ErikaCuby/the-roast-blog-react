@@ -166,6 +166,44 @@ h1 {
   transform: scale(1.02);
 }
 
+/* Blog List Item with Image Preview */
+.blog-preview {
+  border: 1px solid #EADBC8;
+  border-radius: 8px;
+  margin: 15px 0;
+  background: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.preview-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.preview-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.blog-preview h3 {
+  margin: 0;
+  color: #D6A5C0;
+  font-size: 18px;
+}
+
+.blog-preview p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #4A4A4A;
+}
+
 /* Links */
 a {
   text-decoration: none;
@@ -319,6 +357,20 @@ a:hover {
     font-size: 14px;
     padding: 8px;
   }
+
+    .preview-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .blog-preview h3 {
+    font-size: 16px;
+  }
+
+  .blog-preview p {
+    font-size: 12px;
+  }
+
 
   .footer {
     font-size: 10px;

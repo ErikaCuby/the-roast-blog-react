@@ -13,6 +13,13 @@ const blogPosts = [
     image: "/images/marathon.jpg",
     content: "Here are some great tips for preparing for a marathon...",
   },
+  {
+    id: "ai-poetry",
+    title: "Luma Writes AI Poetry",
+    date: "March 22, 2025",
+    image: "/images/poetry.jpg",
+    content: "Poetry between silicon and soul...",
+  },
 ];
 
 export default blogPosts;

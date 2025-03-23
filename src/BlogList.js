@@ -37,8 +37,19 @@ function BlogList() {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
-            <Link to={`/blog/${post.id}`}>{post.title}</Link>
-            <p>{post.date}</p>
+            <Link to={`/blog/${post.id}`}>
+              <div className="preview-content">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="preview-image"
+                />
+                <div>
+                  <h3>{post.title}</h3>
+                  <p>{post.date}</p>
+                </div>
+              </div>
+            </Link>
           </motion.li>
         ))}
       </ul>
