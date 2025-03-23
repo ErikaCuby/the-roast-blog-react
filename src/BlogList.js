@@ -32,7 +32,7 @@ function BlogList() {
     >
       {/* Featured Blog Post Section */}
       <div className="featured-post">
-        <h2>🌟 Featured Blog Post</h2>
+        <h2>A Millennial being roasted by AI on demand.</h2>
         <img
           src={featuredPost.image}
           alt={featuredPost.title}

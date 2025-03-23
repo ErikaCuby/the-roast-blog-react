@@ -22,8 +22,7 @@ function Contact() {
     <div className="container">
       <h1>Contact Us</h1>
       <p>
-        Want to roast, chat, or collaborate with a human-AI tag team? Drop us a
-        line via email, DM, or good vibes.
+        Want to roast, chat, or collaborate with a human-AI tag team? Yeah! Good luck finding us.
       </p>
     </div>
   );
