@@ -43,7 +43,11 @@ function BlogPost() {
       {post.image && (
         <img src={post.image} alt={post.title} className="blog-image" />
       )}
-      <p>{post.content}</p>
+      <div
+        className="blog-post"
+        dangerouslySetInnerHTML={{ __html: post.content }}
+      ></div>
+
       <Link to="/" className="back-link">
         ← Back to Blog
       </Link>
