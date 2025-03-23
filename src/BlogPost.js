@@ -7,24 +7,23 @@ function BlogPost() {
   const { postId } = useParams();
   const post = blogPosts.find((p) => p.id === postId);
 
-   useEffect(() => {
-     if (post) {
-       document.title = `${post.title} | The Roast Blog`;
+  useEffect(() => {
+    if (post) {
+      document.title = `${post.title} | The Roast Blog`;
 
-       const metaDesc = document.querySelector('meta[name="description"]');
-       if (metaDesc) {
-         metaDesc.setAttribute(
-           "content",
-           post.content.substring(0, 150) + "..."
-         );
-       } else {
-         const newMeta = document.createElement("meta");
-         newMeta.name = "description";
-         newMeta.content = post.content.substring(0, 150) + "...";
-         document.head.appendChild(newMeta);
-       }
-     }
-   }, [post]);
+      const meta = document.querySelector('meta[name="description"]');
+      const description = post.subtitle;
+
+      if (meta) {
+        meta.setAttribute("content", description);
+      } else {
+        const newMeta = document.createElement("meta");
+        newMeta.name = "description";
+        newMeta.content = description;
+        document.head.appendChild(newMeta);
+      }
+    }
+  }, [post]);
 
   if (!post) {
     return <h2>Post not found</h2>;

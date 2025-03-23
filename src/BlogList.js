@@ -39,7 +39,7 @@ function BlogList() {
           className="featured-image"
         />
         <h3>{featuredPost.title}</h3>
-        <p>{featuredPost.content.substring(0, 100)}...</p>
+        <p>{featuredPost.subtitle.substring(0, 100)}...</p>
         <Link to={`/blog/${featuredPost.id}`} className="read-more">
           Read More →
         </Link>
@@ -63,6 +63,7 @@ function BlogList() {
                 />
                 <div>
                   <h3>{post.title}</h3>
+                  <p>{post.subtitle}</p>
                   <p>{post.date}</p>
                 </div>
               </div>
