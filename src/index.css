@@ -398,20 +398,6 @@ a:hover {
   color: #d6a5c0;
 }
 
-@media (max-width: 800px) {
-  .header {
-    padding: 15px 64px;
-  }
-
-  .header h1 {
-    font-size: 28px;
-  }
-
-  .nav-links ul {
-    gap: 32px;
-  }
-}
-
 @media (max-width: 768px) {
   .container {
     width: 90%;
@@ -446,7 +432,7 @@ a:hover {
   }
 
   .nav-links.open {
-    height: 350px;
+    height: 330px;
   }
 
   .nav-links ul {
@@ -457,6 +443,10 @@ a:hover {
 
   .nav-links ul li {
     margin: 10px 0;
+  }
+
+  .toggle-btn {
+    margin-bottom: 40px;
   }
 
   .footer {
