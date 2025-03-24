@@ -18,7 +18,7 @@ function Footer() {
       </p>
       <div className="social-icons">
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/erika_and_luma/"
           target="_blank"
           rel="noopener noreferrer"
         >
