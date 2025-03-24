@@ -503,6 +503,10 @@ a:hover {
   transform: scale(1.05);
 }
 
+.carousel:hover .carousel-track {
+  animation-play-state: paused; /* Stop the animation on hover */
+}
+
 @keyframes scrollLoop {
   0% {
     transform: translateX(0);
