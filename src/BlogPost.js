@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams, Link } from "react-router";
 import { motion } from "framer-motion";
 import blogPosts from "./blogPosts";
+import RelatedCarousel from "./RelatedCarousel";
 
 function BlogPost() {
   const { postId } = useParams();
@@ -50,6 +51,7 @@ function BlogPost() {
 
       <Link to="/" className="back-link">
         ← Back to Blog
+        <RelatedCarousel currentPostId={postId} />
       </Link>
     </motion.div>
   );
