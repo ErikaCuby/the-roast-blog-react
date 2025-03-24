@@ -465,48 +465,51 @@ a:hover {
 
 .carousel {
   display: flex;
-  overflow-x: auto;
-  padding: 16px 0;
-  gap: 16px;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  overflow: hidden;
+  position: relative;
 }
 
-.carousel::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+.carousel-track {
+  display: flex;
+  animation: scrollLoop 30s linear infinite;
+  width: max-content;
 }
 
 .carousel-item {
   flex: 0 0 auto;
-  width: 180px;
-  background: white;
-  border: 1px solid #eadbc8;
+  width: 200px;
+  margin-right: 20px;
   border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
   text-align: center;
-  text-decoration: none;
-  color: #4a4a4a;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease-in-out;
-}
-
-.carousel-item:hover {
-  transform: scale(1.04);
+  transition: transform 0.3s;
 }
 
 .carousel-item img {
   width: 100%;
   height: 120px;
   object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .carousel-item h3 {
-  padding: 10px 12px;
-  font-size: 15px;
+  font-size: 14px;
+  padding: 10px;
   color: #d6a5c0;
   font-family: "Playfair Display", serif;
-  line-height: 1.3;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .footer {
@@ -533,6 +536,7 @@ a:hover {
 .social-icons a:hover {
   color: #d6a5c0;
 }
+
 
 @media (max-width: 768px) {
   .container {
