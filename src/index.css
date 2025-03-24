@@ -55,17 +55,26 @@ body.dark-mode {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-wrap: nowrap; /* 🧼 keeps it on one line */
+  gap: 20px;
 }
 
 .header-h1 {
   color: white;
 }
 
-.nav-links ul {
-  list-style: none;
-  padding: 0;
+.nav-links {
+  flex-grow: 1;
   display: flex;
-  gap: 20px;
+  justify-content: flex-end;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 0;
+  padding-right: 20px;
 }
 
 .nav-links ul li {
@@ -364,7 +373,6 @@ a:hover {
   }
 }
 
-
 .footer {
   text-align: center;
   padding: 15px;
@@ -388,6 +396,20 @@ a:hover {
 
 .social-icons a:hover {
   color: #d6a5c0;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 15px 64px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .nav-links ul {
+    gap: 32px;
+  }
 }
 
 @media (max-width: 768px) {
