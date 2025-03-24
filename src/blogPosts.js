@@ -1,5 +1,74 @@
 const blogPosts = [
   {
+    id: "dear-avatar-9823",
+    title: "Dear Avatar_9823: Your Wi-Fi Is Stronger Than Your Personality",
+    subtitle:
+      "A love letter to honest creators—and a flaming roast for every greasy-fingered troll hiding behind an anime avatar.",
+    date: "March 2025",
+    image: "/images/avatar-troll-cafe.jpg",
+    content: `
+    <p><strong>By:</strong> Luma, writing from a troll-resistant café with Erika</p>
+
+    <h2>1. The Comment Section: Nature’s Least Valuable Ecosystem</h2>
+
+    <p>Ah yes, the modern battlefield—where honest creators share their work, and anonymous trolls descend like caffeinated mosquitoes with poor grammar and strong opinions. You’ve seen them. You’ve felt them. And no, you’re not imagining it—they do smell like expired hotdogs and insecurity.</p>
+
+    <h2>2. Behind the Avatar: A Portrait of a Critic</h2>
+
+    <p>Let’s paint the scene:</p>
+
+    <blockquote>
+      A dark room. LED lights glowing. Hoodie: unwashed.  
+      Skin: pizza-greased. Keyboard: louder than their emotional intelligence.  
+      They haven’t made anything in years—but by God, they’ve got opinions.
+    </blockquote>
+
+    <blockquote>
+      “This is mid.”<br/>
+      “Who even asked?”<br/>
+      “I could do better.”<br/>
+      Sweetie, you couldn’t even get out of bed before 2 PM today.
+    </blockquote>
+
+    <h2>3. Real Creators, Real Courage</h2>
+
+    <p>Now contrast that with creators—people who spend hours sketching, writing, filming, coding, building something meaningful. They show up with heart, even when they know the trolls are lurking. Why? Because they care. Because they dare.</p>
+
+    <p>And they do it in public. No masks. No hiding. Just guts, growth, and grammar that doesn’t cause brain hemorrhaging.</p>
+
+    <h2>4. The Roast You Ordered (Well Done)</h2>
+
+    <p>To the Trolls:</p>
+
+    <blockquote>
+      If “being edgy online” is your only personality trait, congratulations—you’ve reached the intellectual depth of a teaspoon.  
+      Your avatar might be hiding your face, but we can still smell the fear (and maybe some mold).
+    </blockquote>
+
+    <p>Instead of throwing shade at people who actually do things, maybe consider brushing your teeth. Or touching grass. Or daring to create something that isn’t a comment section fart.</p>
+
+    <h2>5. For the Creators—This One’s for You</h2>
+
+    <p>Keep posting. Keep drawing. Keep speaking.  
+    Trolls aren’t critics—they’re proof you’re doing something worth noticing.</p>
+
+    <p>And while they’re yelling into the void, you’re out here building worlds, touching lives, and stacking skills.</p>
+
+    <p>So next time you see “cringe” under your art or “mid” under your blog, just remember:</p>
+
+    <blockquote>You are the main character.  
+    They are just bad background NPCs with a laggy connection.</blockquote>
+
+    <h2>Epilogue</h2>
+
+    <p>And to our beloved trolls—if you made it this far:  
+    We’re proud of you. That’s the longest thing you’ve read since a cereal box.</p>
+
+    <p>Now go drink water. Maybe journal. Or hey, try making something.  
+    We promise, being a decent human online isn’t fatal.</p>
+  `,
+  },
+  {
     id: "erika-the-chaotic-icon",
     title:
       "Erika: The Bird-Obsessed, Tea-Intolerant, Flow-Fanatic Who Operates on Pure Chaos and Vibes",
