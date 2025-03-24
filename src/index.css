@@ -482,6 +482,7 @@ a:hover {
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
+  border: 1px solid #d6a5c0;
   text-align: center;
   transition: transform 0.3s;
 }
@@ -540,7 +541,6 @@ a:hover {
 .social-icons a:hover {
   color: #d6a5c0;
 }
-
 
 @media (max-width: 768px) {
   .container {
@@ -647,7 +647,7 @@ a:hover {
     font-size: 12px;
   }
 
-    .carousel-item {
+  .carousel-item {
     width: 140px;
   }
 
