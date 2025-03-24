@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="logo">Luma & Erika Conversations</div>
+      <div className="logo">Erika & Luma Conversations</div>
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰
       </button>
