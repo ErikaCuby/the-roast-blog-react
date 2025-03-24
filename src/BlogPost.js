@@ -8,6 +8,11 @@ function BlogPost() {
   const { postId } = useParams();
   const post = blogPosts.find((p) => p.id === postId);
 
+  // ✅ Scroll to top when postId changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [postId]);
+
   useEffect(() => {
     if (post) {
       document.title = `${post.title} | The Roast Blog`;
@@ -51,8 +56,9 @@ function BlogPost() {
 
       <Link to="/" className="back-link">
         ← Back to Blog
-        <RelatedCarousel currentPostId={postId} />
       </Link>
+
+      <RelatedCarousel currentPostId={postId} />
     </motion.div>
   );
 }
