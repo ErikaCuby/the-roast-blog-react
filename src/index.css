@@ -294,6 +294,77 @@ a:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.show-more-btn {
+  padding: 12px 28px;
+  margin-top: 20px;
+  background-color: #d6a5c0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.show-more-btn:hover {
+  background-color: #c08ca4;
+  transform: scale(1.05);
+}
+
+/* Press effect */
+.show-more-btn:active {
+  transform: scale(0.97);
+}
+
+/* Arrow styling */
+.show-more-btn::after {
+  content: "↓";
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animate arrow on hover */
+.show-more-btn:hover::after {
+  transform: translateY(3px);
+}
+
+/* Shimmer effect */
+.show-more-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+}
+
+.show-more-btn:hover::before {
+  animation: shimmer 1.2s ease-out forwards;
+}
+
+@keyframes shimmer {
+  from {
+    left: -75%;
+  }
+  to {
+    left: 125%;
+  }
+}
+
+
 .footer {
   text-align: center;
   padding: 15px;
