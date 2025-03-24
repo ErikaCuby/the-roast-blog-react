@@ -482,9 +482,10 @@ a:hover {
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
-  border: 1px solid #d6a5c0;
+  border: 1px solid #d6a5c07b;
   text-align: center;
   transition: transform 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.059);
 }
 
 .carousel-item img {
