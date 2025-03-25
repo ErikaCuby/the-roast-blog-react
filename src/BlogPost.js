@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router";
 import { motion } from "framer-motion";
 import blogPosts from "./blogPosts";
 import RelatedCarousel from "./RelatedCarousel";
+import NotFound from "./NotFound";
 
 function BlogPost() {
   const { postId } = useParams();
@@ -32,7 +33,7 @@ function BlogPost() {
   }, [post]);
 
   if (!post) {
-    return <h2>Post not found</h2>;
+    return <NotFound />;
   }
 
   return (

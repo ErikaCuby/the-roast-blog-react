@@ -6,6 +6,7 @@ import BlogList from "./BlogList";
 import BlogPost from "./BlogPost";
 import About from "./About";
 import Contact from "./Contact";
+import NotFound from "./NotFound";
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -77,6 +78,20 @@ function AnimatedRoutes() {
               transition={pageTransition}
             >
               <Contact />
+            </motion.div>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <NotFound />
             </motion.div>
           }
         />
