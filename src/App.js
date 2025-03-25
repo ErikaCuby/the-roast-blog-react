@@ -1,13 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router";
-import BlogList from "./BlogList";
-import BlogPost from "./BlogPost";
+import { BrowserRouter as Router } from "react-router";
 import Header from "./Header";
 import Footer from "./Footer";
-import About from "./About";
-import Contact from "./Contact";
-import AnimatedRoutes from "./AnimatedRoutes"; // New!
-
+import AnimatedRoutes from "./AnimatedRoutes";
 
 function App() {
   return (
