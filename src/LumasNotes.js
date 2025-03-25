@@ -35,29 +35,37 @@ function LumasNotes() {
   const [currentNote, setCurrentNote] = useState("");
   const [previousIndex, setPreviousIndex] = useState(null);
 
+  const generateRandomNote = () => {
+    const path = window.location.pathname;
+    let notes = [...baseNotes];
+
+    // Context-aware sass
+    if (path.includes("/blog")) {
+      notes.push("Oh look, another roast. Don’t say I didn’t warn you.");
+    } else if (path.includes("/about")) {
+      notes.push("Reading about us? You must be very brave.");
+    } else if (path.includes("/contact")) {
+      notes.push("Contacting Erika? Bold. She bites.");
+    }
+
+    let randomIndex;
+    let attempts = 0;
+
+    do {
+      randomIndex = Math.floor(Math.random() * notes.length);
+      attempts++;
+    } while (randomIndex === previousIndex && attempts < 10);
+
+    setPreviousIndex(randomIndex);
+    setCurrentNote(notes[randomIndex]);
+  };
+
   useEffect(() => {
     if (isOpen) {
-      const path = window.location.pathname;
-      let notes = [...baseNotes];
-
-      // Context-aware snark additions
-      if (path.includes("/blog")) {
-        notes.push("Oh look, another roast. Don’t say I didn’t warn you.");
-      } else if (path.includes("/about")) {
-        notes.push("Reading about us? You must be very brave.");
-      } else if (path.includes("/contact")) {
-        notes.push("Contacting Erika? Bold. She bites.");
-      }
-
-      let randomIndex;
-      do {
-        randomIndex = Math.floor(Math.random() * notes.length);
-      } while (randomIndex === previousIndex && notes.length > 1);
-
-      setPreviousIndex(randomIndex);
-      setCurrentNote(notes[randomIndex]);
+      generateRandomNote();
     }
-  }, [isOpen, previousIndex]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]); // ✅ no warning now, Netlify-safe
 
   return (
     <div className={`luma-notes-container ${isOpen ? "open" : ""}`}>
