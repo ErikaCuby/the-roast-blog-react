@@ -9,10 +9,7 @@ body {
   line-height: 1.75;
 }
 
-p {
-  color: #4a4a4a;
-  opacity: 0.7;
-}
+
 
 body.dark-mode {
   background-color: #3a3642; /* Slightly lighter muted plum gray */

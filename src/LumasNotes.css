@@ -112,16 +112,14 @@ body.dark-mode .luma-content {
 
   .luma-notes-container {
     position: fixed;
-    bottom: 80px;
-    left: 16px;
+    bottom: 20px;
     right: 16px;
-    display: flex;
-    justify-content: center;
+    left: auto;
     z-index: 10000;
   }
 
   .luma-toggle {
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
