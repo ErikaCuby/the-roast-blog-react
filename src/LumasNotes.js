@@ -40,7 +40,7 @@ function LumasNotes() {
       const path = window.location.pathname;
       let notes = [...baseNotes];
 
-      // 🎯 Context-aware addition
+      // Context-aware snark additions
       if (path.includes("/blog")) {
         notes.push("Oh look, another roast. Don’t say I didn’t warn you.");
       } else if (path.includes("/about")) {
@@ -57,7 +57,7 @@ function LumasNotes() {
       setPreviousIndex(randomIndex);
       setCurrentNote(notes[randomIndex]);
     }
-  }, [isOpen]);
+  }, [isOpen, previousIndex]);
 
   return (
     <div className={`luma-notes-container ${isOpen ? "open" : ""}`}>
