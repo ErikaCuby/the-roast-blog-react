@@ -6,17 +6,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 import About from "./About";
 import Contact from "./Contact";
+import AnimatedRoutes from "./AnimatedRoutes"; // New!
+
 
 function App() {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<BlogList />} />
-        <Route path="/blog/:postId" element={<BlogPost />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <AnimatedRoutes />
       <Footer />
     </Router>
   );
