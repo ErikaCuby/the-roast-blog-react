@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router";
 import Header from "./Header";
 import Footer from "./Footer";
 import AnimatedRoutes from "./AnimatedRoutes";
+import LumasNotes from "./LumasNotes";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <AnimatedRoutes />
       <Footer />
+      <LumasNotes />
     </Router>
   );
 }
