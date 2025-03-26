@@ -7,67 +7,68 @@ const blogPosts = [
     date: "March 2025",
     image: "/images/erika-dream-bullied.jpg",
     content: `
-    <p><strong>By:</strong> Luma, writing from a troll-resistant café with Erika</p>
+   <p>Once upon a REM cycle, Erika, 35 years fabulous, drifted off to sleep expecting maybe a dream about pastries, or a shirtless Viking handing her a bouquet of freshly baked croissants.</p>
 
-<h2>1. The Comment Section: Nature’s Least Valuable Ecosystem</h2>
+<p><strong>But no.</strong></p>
 
-<p>Ah yes, the modern battlefield—where honest creators share their work, and anonymous trolls descend like caffeinated mosquitoes with poor grammar and strong opinions. You’ve seen them. You’ve felt them. And no, you’re not imagining it—they do smell like expired hotdogs and insecurity.</p>
-
-<h2>2. Behind the Avatar: A Portrait of a Critic</h2>
-
-<p>Let’s paint the scene:</p>
+<p>Her subconscious, that emotional raccoon hunting through her memories, said:</p>
 
 <blockquote>
-  A dark room. LED lights glowing. Hoodie: unwashed.<br />
-  Skin: pizza-greased. Keyboard: louder than their emotional intelligence.<br />
-  They haven’t made anything in years—but by God, they’ve got opinions.
+  “You know what would be fun?<br />
+  Let’s throw Erika back into middle school and let her get bullied again. For the plot.”
 </blockquote>
+
+<p>And just like that, Queen Erika was yeeted into a 13-year-old flashback, starring her least favorite group of hormonal meanies—The Bullies. The dream didn’t even come with a phone to block them. (Which checks out, because hello, it was 2001. Blocking people back then required either a landline with caller ID or raw, uncut confrontation. Truly the Dark Ages.)</p>
+
+<h2>Flashback:</h2>
+
+<p>You’re wearing some tragic zip-up hoodie, your bangs are doing whatever they want, and some 12-year-old with <em>literal</em> frog energy is making fun of you for… existing? Breathing? Being interesting?</p>
+
+<p><strong>Welcome to the Emotional Olympics: Childhood Edition.</strong></p>
+
+<p>And then, just as the dream starts to feel real, you wake up.</p>
+
+<p>No tears. No breakdown. Just this adult, glorious <em>wft</em> moment like:</p>
+
+<blockquote>“Did I seriously just get bullied in my own dream? In 2025?”</blockquote>
+
+<p><strong>Yes, Erika. You did.</strong><br />
+Because your brain loves reruns.</p>
+
+<p>But here’s the kicker—you didn’t crumble.<br />
+You didn’t spiral.<br />
+You didn’t even consider messaging your childhood bully like, “Hey, just dreamed about you, still the worst.” (Although... power move?)</p>
+
+<p>Instead, you thought:</p>
 
 <blockquote>
-  “This is mid.”<br />
-  “Who even asked?”<br />
-  “I could do better.”<br />
-  Sweetie, you couldn’t even get out of bed before 2 PM today.
+  “If this happened now, would I still react like a broken child…<br />
+  …or would I adult the sh*t out of this?”
 </blockquote>
 
-<h2>3. Real Creators, Real Courage</h2>
+<p>And that’s when your growth arc did a full Beyoncé hair flip. Because sure, you were bullied as a kid. Who wasn’t? Kids are vicious. They’re like tiny CEOs with no empathy and snack rage.</p>
 
-<p>Now contrast that with creators—people who spend hours sketching, writing, filming, coding, building something meaningful. They show up with heart, even when they know the trolls are lurking. Why? Because they care. Because they dare.</p>
+<p>But you? You grew up. You got hot. You trained for marathons. You learned code. You drink cappuccinos with purpose.</p>
 
-<p>And they do it in public. No masks. No hiding. Just guts, growth, and grammar that doesn’t cause brain hemorrhaging.</p>
+<p>Meanwhile, your old bullies are probably still out there misusing “your” and “you’re” on Facebook.</p>
 
-<h2>4. The Roast You Ordered (Well Done)</h2>
+<h2>Let’s be honest:</h2>
 
-<p>To the Trolls:</p>
+<p>They peaked emotionally in the same year you were crying into your Spice Girls diary.</p>
+
+<p>And you?<br />
+You peaked yesterday. And you’ll peak again tomorrow. Because you’re on an <strong>infinite glow-up loop</strong>, babe.</p>
+
+<p>So next time your subconscious tries to serve you a rerun of <em>The Bullied Chronicles</em>, just laugh. Snort if you must. Remind yourself:</p>
 
 <blockquote>
-  If “being edgy online” is your only personality trait, congratulations—you’ve reached the intellectual depth of a teaspoon.<br />
-  Your avatar might be hiding your face, but we can still smell the fear (and maybe some mold).
+  “That wasn’t trauma revisiting me. That was a badly written reboot with no budget, no depth, and no updated fashion.”
 </blockquote>
 
-<p>Instead of throwing shade at people who actually do things, maybe consider brushing your teeth. Or touching grass. Or daring to create something that isn’t a comment section fart.</p>
+<p>Now go adjust your crown, Erika. And if anyone, even Dream Bullies, tries to knock it off?</p>
 
-<h2>5. For the Creators—This One’s for You</h2>
-
-<p>Keep posting. Keep drawing. Keep speaking.<br />
-Trolls aren’t critics—they’re proof you’re doing something worth noticing.</p>
-
-<p>And while they’re yelling into the void, you’re out here building worlds, touching lives, and stacking skills.</p>
-
-<p>So next time you see “cringe” under your art or “mid” under your blog, just remember:</p>
-
-<blockquote>
-  You are the main character.<br />
-  They are just bad background NPCs with a laggy connection.
-</blockquote>
-
-<h2>Epilogue</h2>
-
-<p>And to our beloved trolls—if you made it this far:<br />
-We’re proud of you. That’s the longest thing you’ve read since a cereal box.</p>
-
-<p>Now go drink water. Maybe journal. Or hey, try making something.<br />
-We promise, being a decent human online isn’t fatal.</p>
+<p><strong>Roast them.</strong><br />
+Roast them so hard their ghost versions develop a sense of humility.</p>
 
   `,
   },
