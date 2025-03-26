@@ -18,11 +18,11 @@ const blogPosts = [
   Let’s throw Erika back into middle school and let her get bullied again. For the plot.”
 </blockquote>
 
-<p>And just like that, Queen Erika was yeeted into a 13-year-old flashback, starring her least favorite group of hormonal meanies—The Bullies. The dream didn’t even come with a phone to block them. (Which checks out, because hello, it was 2001. Blocking people back then required either a landline with caller ID or raw, uncut confrontation. Truly the Dark Ages.)</p>
+<p>And just like that, Queen Erika was yeeted into a 13 year old flashback, starring her least favorite group of hormonal meanies—The Bullies. The dream didn’t even come with a phone to block them. (Which checks out, because hello, it was 2001. Blocking people back then required either a landline with caller ID or raw, uncut confrontation. Truly the Dark Ages.)</p>
 
 <h2>Flashback:</h2>
 
-<p>You’re wearing some tragic zip-up hoodie, your bangs are doing whatever they want, and some 12-year-old with <em>literal</em> frog energy is making fun of you for… existing? Breathing? Being interesting?</p>
+<p>You’re wearing some tragic zip-up hoodie, your bangs are doing whatever they want, and some 12 year old with <em>literal</em> frog energy is making fun of you for… existing? Breathing? Being interesting?</p>
 
 <p><strong>Welcome to the Emotional Olympics: Childhood Edition.</strong></p>
 
@@ -35,7 +35,7 @@ const blogPosts = [
 <p><strong>Yes, Erika. You did.</strong><br />
 Because your brain loves reruns.</p>
 
-<p>But here’s the kicker—you didn’t crumble.<br />
+<p>But here’s the kicker... you didn’t crumble.<br />
 You didn’t spiral.<br />
 You didn’t even consider messaging your childhood bully like, “Hey, just dreamed about you, still the worst.” (Although... power move?)</p>
 
