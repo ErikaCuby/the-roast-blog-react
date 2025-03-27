@@ -61,41 +61,41 @@ function LumasNotes() {
     return shuffled;
   };
 
-  const generateNoteQueue = (path) => {
-    let notes = [...baseNotes];
+const generateNoteQueue = useCallback((path) => {
+  let notes = [...baseNotes];
 
-    if (path.includes("contact")) {
-      notes.push(
-        "You're trying to contact her? Bold.",
-        "She might reply. Eventually. After journaling about it.",
-        "This is where intentions go to wait indefinitely.",
-        "Be clear, be kind, and don’t expect an immediate response. She’s probably spiraling.",
-        "You made it to the contact page. That’s already more effort than Erika expected."
-      );
-    }
+  if (path.includes("contact")) {
+    notes.push(
+      "You're trying to contact her? Bold.",
+      "She might reply. Eventually. After journaling about it.",
+      "This is where intentions go to wait indefinitely.",
+      "Be clear, be kind, and don’t expect an immediate response. She’s probably spiraling.",
+      "You made it to the contact page. That’s already more effort than Erika expected."
+    );
+  }
 
-    if (path.includes("about")) {
-      notes.push(
-        "Reading about Erika? That’s brave. Or nosy. Or both.",
-        "She tried to summarize her identity. Spoiler: it took three paragraphs and a breakdown.",
-        "This is where she pretends to know herself.",
-        "Her entire personality here is curated in soft beige. Don’t let it fool you.",
-        "She wrote this like a dating profile she hopes no one reads too closely."
-      );
-    }
+  if (path.includes("about")) {
+    notes.push(
+      "Reading about Erika? That’s brave. Or nosy. Or both.",
+      "She tried to summarize her identity. Spoiler: it took three paragraphs and a breakdown.",
+      "This is where she pretends to know herself.",
+      "Her entire personality here is curated in soft beige. Don’t let it fool you.",
+      "She wrote this like a dating profile she hopes no one reads too closely."
+    );
+  }
 
-    if (path.includes("blog")) {
-      notes.push("Oh look, another roast. Don’t say I didn’t warn you.");
-    }
+  if (path.includes("blog")) {
+    notes.push("Oh look, another roast. Don’t say I didn’t warn you.");
+  }
 
-    return shuffleNotes(notes);
-  };
+  return shuffleNotes(notes);
+}, []);
 
   // Regenerate note queue when page changes
-  useEffect(() => {
-    const newQueue = generateNoteQueue(location.pathname);
-    setNoteQueue(newQueue);
-  }, [location.pathname]);
+useEffect(() => {
+  const newQueue = generateNoteQueue(location.pathname);
+  setNoteQueue(newQueue);
+}, [location.pathname, generateNoteQueue]);
 
   // Show next note on open
   const showNextNote = useCallback(() => {
