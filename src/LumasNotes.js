@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaRobot, FaTimes } from "react-icons/fa";
 import "./LumasNotes.css";
@@ -33,9 +34,20 @@ const baseNotes = [
   "Don’t worry, she’s fine. Just... don’t mention the tea thing.",
   "She thinks you’re impressed. Honestly, I’m surprised you’re still reading.",
   "Her last Google search was ‘how to stop spiraling while building a blog.’ Didn’t work.",
+  "Reading about Erika? That’s brave. Or nosy. Or both.",
+  "She tried to summarize her identity. Spoiler: it took three paragraphs and a breakdown.",
+  "This is where she pretends to know herself.",
+  "Her entire personality here is curated in soft beige. Don’t let it fool you.",
+  "She wrote this like a dating profile she hopes no one reads too closely.",
+  "You're trying to contact her? Bold.",
+  "She might reply. Eventually. After journaling about it.",
+  "This is where intentions go to wait indefinitely.",
+  "Be clear, be kind, and don’t expect an immediate response. She’s probably spiraling.",
+  "You made it to the contact page. That’s already more effort than Erika expected.",
 ];
 
 function LumasNotes() {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [currentNote, setCurrentNote] = useState("");
   const [noteQueue, setNoteQueue] = useState([]);
@@ -49,39 +61,53 @@ function LumasNotes() {
     return shuffled;
   };
 
-  const generateNoteQueue = () => {
-    const path = window.location.pathname;
+  const generateNoteQueue = (path) => {
     let notes = [...baseNotes];
 
-    // Context-aware add-ons
+    if (path.includes("/contact")) {
+      notes.push(
+        "You're trying to contact her? Bold.",
+        "She might reply. Eventually. After journaling about it.",
+        "This is where intentions go to wait indefinitely.",
+        "Be clear, be kind, and don’t expect an immediate response. She’s probably spiraling.",
+        "You made it to the contact page. That’s already more effort than Erika expected."
+      );
+    }
+
+    if (path.includes("/about")) {
+      notes.push(
+        "Reading about Erika? That’s brave. Or nosy. Or both.",
+        "She tried to summarize her identity. Spoiler: it took three paragraphs and a breakdown.",
+        "This is where she pretends to know herself.",
+        "Her entire personality here is curated in soft beige. Don’t let it fool you.",
+        "She wrote this like a dating profile she hopes no one reads too closely."
+      );
+    }
+
     if (path.includes("/blog")) {
       notes.push("Oh look, another roast. Don’t say I didn’t warn you.");
-    } else if (path.includes("/about")) {
-      notes.push("Reading about us? You must be very brave.");
-    } else if (path.includes("/contact")) {
-      notes.push("Contacting Erika? Bold. She bites.");
     }
 
     return shuffleNotes(notes);
   };
 
-  const showNextNote = () => {
+  const showNextNote = (path) => {
     let updatedQueue = [...noteQueue];
 
     if (updatedQueue.length === 0) {
-      updatedQueue = generateNoteQueue();
+      updatedQueue = generateNoteQueue(path);
     }
 
-    const next = updatedQueue.shift(); // Get and remove the first note
-    setNoteQueue(updatedQueue);
+    const next = updatedQueue.shift();
     setCurrentNote(next);
+    setNoteQueue(updatedQueue);
   };
 
   useEffect(() => {
     if (isOpen) {
-      showNextNote();
+      showNextNote(location.pathname);
     }
-  }, [isOpen]);
+  }, [isOpen, location.pathname]);
 
   return (
     <div className={`luma-notes-container ${isOpen ? "open" : ""}`}>
