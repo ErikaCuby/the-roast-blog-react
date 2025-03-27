@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useLocation } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaRobot, FaTimes } from "react-icons/fa";
@@ -64,7 +64,7 @@ function LumasNotes() {
   const generateNoteQueue = (path) => {
     let notes = [...baseNotes];
 
-    if (path.includes("/contact")) {
+    if (path.includes("contact")) {
       notes.push(
         "You're trying to contact her? Bold.",
         "She might reply. Eventually. After journaling about it.",
@@ -74,7 +74,7 @@ function LumasNotes() {
       );
     }
 
-    if (path.includes("/about")) {
+    if (path.includes("about")) {
       notes.push(
         "Reading about Erika? That’s brave. Or nosy. Or both.",
         "She tried to summarize her identity. Spoiler: it took three paragraphs and a breakdown.",
@@ -84,30 +84,33 @@ function LumasNotes() {
       );
     }
 
-    if (path.includes("/blog")) {
+    if (path.includes("blog")) {
       notes.push("Oh look, another roast. Don’t say I didn’t warn you.");
     }
 
     return shuffleNotes(notes);
   };
 
-  const showNextNote = (path) => {
-    let updatedQueue = [...noteQueue];
+  // Regenerate note queue when page changes
+  useEffect(() => {
+    const newQueue = generateNoteQueue(location.pathname);
+    setNoteQueue(newQueue);
+  }, [location.pathname]);
 
-    if (updatedQueue.length === 0) {
-      updatedQueue = generateNoteQueue(path);
+  // Show next note on open
+  const showNextNote = useCallback(() => {
+    if (noteQueue.length > 0) {
+      const next = noteQueue[0];
+      setCurrentNote(next);
+      setNoteQueue((prev) => prev.slice(1));
     }
-
-    const next = updatedQueue.shift();
-    setCurrentNote(next);
-    setNoteQueue(updatedQueue);
-  };
+  }, [noteQueue]);
 
   useEffect(() => {
     if (isOpen) {
-      showNextNote(location.pathname);
+      showNextNote();
     }
-  }, [isOpen, location.pathname]);
+  }, [isOpen, showNextNote]);
 
   return (
     <div className={`luma-notes-container ${isOpen ? "open" : ""}`}>
