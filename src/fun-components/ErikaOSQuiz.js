@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./ErikaOSQuiz.css"; // Assuming you’ll create a CSS module or standard stylesheet for styling
-
+import "./ErikaOSQuiz.css"; 
 const questions = [
   {
     question: "What’s your wallpaper?",
@@ -9,7 +8,7 @@ const questions = [
       { text: "Nature, art, architecture", value: 1 },
       { text: "Motivational quote", value: 2 },
       { text: "Your own face", value: 4 },
-      { text: "Pet in costume", value: 2 },
+      { text: "Pet in costume", value: 3 },
     ],
   },
   {
@@ -54,7 +53,7 @@ const questions = [
       { text: "Empowering!", value: 4 },
       { text: "No judgment… but rethinking it", value: 2 },
       { text: "I’m already changing it", value: 1 },
-      { text: "I *was* confident until this", value: 2 },
+      { text: "I *was* confident until this", value: 3 },
     ],
   },
 ];
@@ -105,24 +104,28 @@ export default function ErikaOSQuiz() {
           <h3 className="question-text">{`${i + 1}. ${q.question}`}</h3>
           <div className="options">
             {q.options.map((opt, j) => (
-              <label key={j} className="option">
-                <input
-                  type="radio"
-                  name={`question-${i}`}
-                  value={opt.value}
-                  checked={answers[i] === opt.value}
-                  onChange={() => handleOptionSelect(i, opt.value)}
-                />
-                {opt.text}
-              </label>
+              <div key={j} className="option">
+                <label>
+                  <input
+                    type="radio"
+                    name={`question-${i}`}
+                    value={opt.value}
+                    checked={answers[i] === opt.value}
+                    onChange={() => handleOptionSelect(i, opt.value)}
+                  />
+                  <span>{opt.text}</span>
+                </label>
+              </div>
             ))}
           </div>
         </div>
       ))}
 
-      <button onClick={calculateResult} className="submit-button">
-        Submit
-      </button>
+      <div className="submit-button-wrapper">
+        <button onClick={calculateResult} className="submit-button">
+          Reveal the verdict
+        </button>
+      </div>
 
       {result && <p className="quiz-result">{result}</p>}
     </div>

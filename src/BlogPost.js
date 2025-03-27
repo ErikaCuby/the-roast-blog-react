@@ -1,13 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router";
 import { motion } from "framer-motion";
 import blogPosts from "./blogPosts";
 import RelatedCarousel from "./RelatedCarousel";
 import NotFound from "./NotFound";
+import ErikaOSQuiz from "./fun-components/ErikaOSQuiz";
 
 function BlogPost() {
   const { postId } = useParams();
   const post = blogPosts.find((p) => p.id === postId);
+
+  const [showQuiz, setShowQuiz] = useState(false);
+  const handleToggleQuiz = () => setShowQuiz((prev) => !prev);
+
 
   // ✅ Scroll to top when postId changes
   useEffect(() => {
@@ -54,6 +59,20 @@ function BlogPost() {
         className="blog-post"
         dangerouslySetInnerHTML={{ __html: post.content }}
       ></div>
+
+      {post.showQuiz && (
+        <div className="quiz-cta-wrapper">
+          <button onClick={handleToggleQuiz} className="cta-button">
+            {showQuiz
+              ? "Okay, fine. Show me the damage."
+              : "Check Your Own Desktop Before You Judge Hers"}
+          </button>
+
+          <div className={`quiz-reveal ${showQuiz ? "show" : ""}`}>
+            {showQuiz && <ErikaOSQuiz />}
+          </div>
+        </div>
+      )}
 
       <Link to="/" className="back-link">
         ← Back to Blog

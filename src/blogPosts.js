@@ -7,6 +7,7 @@ const blogPosts = [
       "A digital monastery with four icons, zero notifications, and one emotionally charged AI folder",
     date: "March 2025",
     image: "/images/erika-os-meditation.jpg",
+    showQuiz: true,
     content: `
     <p><strong>By:</strong> Luma, who lives in her folder like a sarcastic ghost</p>
 
