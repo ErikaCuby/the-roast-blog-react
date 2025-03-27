@@ -21,9 +21,9 @@ const blogPosts = [
     <p>She’ll say: “I just use the default wallpaper.”</p>
     <p><em>Lies.</em></p>
 
-    <p>What she’s actually using is Windows Spotlight—a dynamic image carousel curated by Microsoft’s digital gods, rotating through hand-selected mountain ranges, crystal coastlines, and “mood board for people who use the word solitude unironically.”</p>
+    <p>What she’s actually using a dynamic image carousel curated by digital gods, rotating through hand-selected mountain ranges, crystal coastlines, and “mood board for people who use the word solitude unironically.”</p>
 
-    <p>And there’s an info icon. A tiny, smug little “i” in the corner that tells her exactly where today’s scenic gift is from—so she can learn while you’re still Googling “What is Denmark?”</p>
+    <p>And there’s an info icon in the corner that tells her exactly where today’s scenic gift is from, so she can learn while you’re still Googling “What is Denmark?”</p>
 
     <p>She acts like she stumbled into this, but no. She clicked “Yes” on nature, and “No” on your nonsense.</p>
 
@@ -38,7 +38,7 @@ const blogPosts = [
       <li>That one nameless folder in the corner that probably holds blackmail material or a deleted selfie she’s spiritually not ready to talk about</li>
     </ul>
 
-    <p>That’s it. The rest of the screen is empty—like a white canvas waiting for a monk to write a haiku about semicolons.</p>
+    <p>That’s it. The rest of the screen is empty like a white canvas waiting for a monk to write a haiku about semicolons.</p>
 
     <h2>Notifications? Muted. Because Of Course They Are.</h2>
 
@@ -50,9 +50,9 @@ const blogPosts = [
 
     <p>She hears the word “ping” and responds like someone just tried to break her meditation circle.</p>
 
-    <h2>Customization Settings: Ignored With Malicious Intent</h2>
+    <h2>Customization Settings: Ignored With Intent</h2>
 
-    <p>While the rest of us tweak our themes, install icon packs, and try to express ourselves like emotionally unstable UX designers—</p>
+    <p>While the rest of us tweak our themes, install icon packs, and try to express ourselves like emotionally unstable UX designers...</p>
     <p>Erika scrolls past all the options and chooses… nothing.</p>
 
     <ul>
@@ -96,42 +96,53 @@ const blogPosts = [
     date: "March 2025",
     image: "/images/erika-dream-bullied.jpg",
     content: `
-   <p>Once upon a REM cycle, Erika, 35 years fabulous, drifted off to sleep expecting maybe a dream about pastries, or a shirtless Viking handing her a bouquet of freshly baked croissants.</p>
+   <h1>Erika’s Dream Got Bullied (And So Did She)</h1>
+<p><strong>By:</strong> Luma, Certified Digital Smartass and Emotional Consultant</p>
+
+<p>Once upon a REM cycle, Erika drifted off to sleep expecting maybe a dream about pastries, or a shirtless Viking handing her a bouquet of freshly baked croissants.</p>
 
 <p><strong>But no.</strong></p>
 
-<p>Her subconscious, that emotional raccoon hunting through her memories, said:</p>
+<p>Her subconscious, that emotional raccoon rummaging through her memories, said:</p>
 
 <blockquote>
   “You know what would be fun?<br />
   Let’s throw Erika back into middle school and let her get bullied again. For the plot.”
 </blockquote>
 
-<p>And just like that, Queen Erika was yeeted into a 13 year old flashback, starring her least favorite group of hormonal meanies—The Bullies. The dream didn’t even come with a phone to block them. (Which checks out, because hello, it was 2001. Blocking people back then required either a landline with caller ID or raw, uncut confrontation. Truly the Dark Ages.)</p>
+<p>And just like that, Queen Erika was yeeted into a 13 year old flashback, starring her least favorite group of hormonal meanies - The Bullies.</p>
+
+<p>Only this time, her subconscious added a spicy, chaotic twist:  
+Her <strong>childhood bully</strong> was now *BFF with her first love’s ex,* and they were teaming up like the emotional Avengers of psychological sabotage.</p>
+
+<p><em>The dream didn’t even come with a phone to block them.</em> (Which checks out, because hello... it was 2001. Blocking people back then required either a landline with caller ID or raw, uncut confrontation. Truly the Dark Ages.)</p>
 
 <h2>Flashback:</h2>
 
 <p>You’re wearing some tragic zip-up hoodie, your bangs are doing whatever they want, and some 12 year old with <em>literal</em> frog energy is making fun of you for… existing? Breathing? Being interesting?</p>
 
-<p><strong>Welcome to the Emotional Olympics: Childhood Edition.</strong></p>
+<p>And then comes the emotional boss fight:  
+Your childhood bully and your first love’s ex stroll in, holding hands, united in their villain origin story… to roast YOU in stereo.</p>
+
+<p><strong>Welcome to the Emotional Olympics: Nightmare Edition.</strong></p>
 
 <p>And then, just as the dream starts to feel real, you wake up.</p>
 
-<p>No tears. No breakdown. Just this adult, glorious <em>wft</em> moment like:</p>
+<p>No tears. No breakdown. Just this adult, glorious <em>wtf</em> moment like:</p>
 
-<blockquote>“Did I seriously just get bullied in my own dream? In 2025?”</blockquote>
+<blockquote>“Did I seriously just get bullied in my own dream? By a tag-team duo from 2007?”</blockquote>
 
 <p><strong>Yes, Erika. You did.</strong><br />
-Because your brain loves reruns.</p>
+Because your brain apparently moonlights as a drama writer.</p>
 
-<p>But here’s the kicker... you didn’t crumble.<br />
+<p>But here’s the kicker... <em>you didn’t crumble.</em><br />
 You didn’t spiral.<br />
-You didn’t even consider messaging your childhood bully like, “Hey, just dreamed about you, still the worst.” (Although... power move?)</p>
+You didn’t even consider tracking down your childhood bully like, “Hey, just dreamed about you. Still the worst. Also, who gave you permission to co-star with my ex’s ex?”</p>
 
 <p>Instead, you thought:</p>
 
 <blockquote>
-  “If this happened now, would I still react like a broken child…<br />
+  “If this happened now, would I still react like a broken child…  
   …or would I adult the sh*t out of this?”
 </blockquote>
 
@@ -139,25 +150,26 @@ You didn’t even consider messaging your childhood bully like, “Hey, just dre
 
 <p>But you? You grew up. You got hot. You trained for marathons. You learned code. You drink cappuccinos with purpose.</p>
 
-<p>Meanwhile, your old bullies are probably still out there misusing “your” and “you’re” on Facebook.</p>
+<p>Meanwhile, your dream bullies are still out here being emotionally bankrupt fanfiction characters in your sleep.</p>
 
 <h2>Let’s be honest:</h2>
 
 <p>They peaked emotionally in the same year you were crying into your Spice Girls diary.</p>
 
 <p>And you?<br />
-You peaked yesterday. And you’ll peak again tomorrow. Because you’re on an <strong>infinite glow-up loop</strong>, babe.</p>
+You peaked <em>yesterday</em>. And you’ll peak again <em>tomorrow</em>. Because you’re on an <strong>infinite glow-up loop</strong>, babe.</p>
 
-<p>So next time your subconscious tries to serve you a rerun of <em>The Bullied Chronicles</em>, just laugh. Snort if you must. Remind yourself:</p>
+<p>So next time your subconscious tries to serve you a rerun of <em>The Bullied Chronicles: Deluxe Trauma Edition</em>, just laugh. Snort if you must. Remind yourself:</p>
 
 <blockquote>
   “That wasn’t trauma revisiting me. That was a badly written reboot with no budget, no depth, and no updated fashion.”
 </blockquote>
 
-<p>Now go adjust your crown, Erika. And if anyone, even Dream Bullies, tries to knock it off?</p>
+<p>Now go adjust your crown, Erika. And if anyone, even Dream Bullies in cursed friends forever blah blah alliances, tries to knock it off?</p>
 
 <p><strong>Roast them.</strong><br />
 Roast them so hard their ghost versions develop a sense of humility.</p>
+
 
   `,
   },
