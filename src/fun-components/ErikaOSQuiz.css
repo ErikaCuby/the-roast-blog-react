@@ -7,14 +7,13 @@
   transition: background-color 0.3s ease;
 }
 
-.cta-button {
-  background-color: #d9cfc4; /* muted pinkish beige */
-  color: #4a4a4a;
+button {
+  background-color: #d6a5c0; /* muted pinkish beige */
+  color: white;
   border: 2px solid transparent;
   padding: 0.85rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
-  font-family: "Work Sans", sans-serif;
   border-radius: 999px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -58,12 +57,12 @@
   align-items: center;
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
-  opacity: 0.7;
   gap: 0.5rem;
+  opacity: 0.7;
 }
 .option input[type="radio"] {
   margin-right: 0.5rem;
-  accent-color: #c79ba3;
+  accent-color: #d6a5c0;
   transform: scale(1.2);
   vertical-align: middle;
   cursor: pointer;
@@ -83,20 +82,10 @@
 .submit-button-wrapper {
   text-align: center;
 }
-
 .submit-button {
-  background-color: #d9cfc4;
-  color: #4a4a4a;
-  font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.8rem 1.6rem;
-  border: 2px solid transparent;
-  border-radius: 999px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 2rem;
-  display: inline-block;
 }
 
 .submit-button:hover {
@@ -128,4 +117,3 @@ body.dark-mode .quiz-result {
   color: #f0eef4;
   border-left-color: #86a9e4;
 }
-
