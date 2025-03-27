@@ -20,6 +20,20 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Animation, when hovering on the logo, it will wiggle */
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-7deg); }
+  40% { transform: rotate(7deg); }
+  60% { transform: rotate(-4deg); }
+  80% { transform: rotate(4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.luma-toggle:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
+
 .luma-toggle:hover {
   background-color: #d6a5c0;
   color: white;

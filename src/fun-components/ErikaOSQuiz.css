@@ -7,7 +7,7 @@
   transition: background-color 0.3s ease;
 }
 
-button {
+.cta-button, .submit-button {
   background-color: #d6a5c0; /* muted pinkish beige */
   color: white;
   border: 2px solid transparent;
@@ -38,7 +38,6 @@ button {
 }
 
 .quiz-title {
-  font-family: "Work Sans", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   color: #4a4a4a;
@@ -55,7 +54,6 @@ button {
 .option {
   display: flex;
   align-items: center;
-  font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   gap: 0.5rem;
   opacity: 0.7;
@@ -102,12 +100,12 @@ body.dark-mode .quiz-cta-wrapper {
   background-color: #4b4756;
 }
 
-body.dark-mode .cta-button {
+body.dark-mode .cta-button, body.dark-mode .submit-button {
   background-color: #5d5a6b;
   color: #f0eef4;
 }
 
-body.dark-mode .cta-button:hover {
+body.dark-mode .cta-button:hover, body.dark-mode .submit-button:hover {
   background-color: #6d6a7c;
   border-color: #8f8ba3;
 }
