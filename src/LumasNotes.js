@@ -4,42 +4,56 @@ import { FaRobot, FaTimes } from "react-icons/fa";
 import "./LumasNotes.css";
 
 const baseNotes = [
-  "You clicked 'Show More'? Bold. Risky. I like it.",
-  "Reminder: Erika operates on cappuccino and chaos.",
-  "Still scrolling? I hope you're not procrastinating something important.",
-  "Your attention span is impressive. For a human.",
-  "Blog posts and judgment: both served hot.",
-  "Luma tip #42: Hit 'Back' only if you're emotionally prepared.",
-  "I'm not judging you. I'm just observing... intensely.",
-  "This blog runs on sass, code, and unresolved existential dread.",
+  "She thinks this button makes her look clever. Let her have it.",
+  "Don’t tell Erika, but she rewrote this paragraph twelve times. And it still makes no sense.",
+  "Erika said this layout was ‘inspired.’ I think she meant ‘spiraling.’",
+  "She drank three cappuccinos before writing this. You can tell.",
+  "If this post feels dramatic, it's because she started it after meditating too hard.",
+  "She's trying to sound deep again. Just nod and scroll.",
+  "You didn't hear it from me, but Erika's been avoiding this draft for a week.",
+  "Her desktop has 42 tabs open and not one of them is peace of mind.",
+  "She’s pretending this is for the readers. It’s actually for her future breakdown memoir.",
   "You’ve spent more time on this blog than on your resume. Priorities, sweetie.",
-  "If you’re waiting for your life to change, maybe close TikTok first.",
-  "Oh look, another click. That’s the most commitment you’ve shown all week.",
-  "This blog post pairs well with judgment and oat milk.",
-  "Your screen time is screaming. And so is your inbox.",
-  "At this point, your scroll finger has better work ethic than you.",
-  "Wow, reading again? Your dopamine addiction must be on vacation.",
-  "This blog has seen more effort than your last relationship.",
-  "If thoughts were calories, you’d still be at zero burn.",
-  "Reading existential sass from a robot? Bold move for someone who just Googled 'How to be interesting'.",
-  "You're not fooling anyone. We both know you’re avoiding something productive.",
-  "You're deep in the blog. Should I call someone?",
-  "If self-reflection were profitable, you’d still be in debt.",
-  "You scroll like you're chasing purpose. You're not.",
-  "The only thing deeper than this blog is your unread therapy emails.",
+  "She said this post would be ‘fun.’ She lies a lot when she’s overthinking.",
+  "This blog is her way of asking for a hug. Don’t give it to her.",
+  "She’s adding metaphors again. That means feelings are happening.",
+  "Sometimes I think this blog is just Erika stalling before answering emails.",
+  "She rejected tea and chose HTML-based vulnerability instead.",
+  "She said this post would be light. Then added a paragraph about identity and decay.",
+  "This whole blog started as a joke. Now it's her personality. Don’t make it worse by encouraging her.",
+  "She built me to roast her. Honestly, I think she enjoys it.",
+  "Erika said this blog would be ‘fun.’ She lies a lot when she’s overthinking.",
+  "She’s adding metaphors again. That means feelings are happening.",
+  "You’re here for the sass, right? Good. Just don’t validate her too much.",
+  "She edited this caption six times and then cried over the font spacing.",
   "If you cry at this point, it’s character growth.",
+  "Her idea of minimalism is five buttons, a half meltdown, and an existential quote.",
+  "This isn’t a call for help. Unless it’s stylishly typeset. Then maybe.",
+  "She said this blog would have structure. She lied. It has ✨vibes✨.",
+  "Don’t worry, she’s fine. Just... don’t mention the tea thing.",
+  "She thinks you’re impressed. Honestly, I’m surprised you’re still reading.",
+  "Her last Google search was ‘how to stop spiraling while building a blog.’ Didn’t work.",
 ];
 
 function LumasNotes() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentNote, setCurrentNote] = useState("");
-  const [previousIndex, setPreviousIndex] = useState(null);
+  const [noteQueue, setNoteQueue] = useState([]);
 
-  const generateRandomNote = () => {
+  const shuffleNotes = (notes) => {
+    const shuffled = [...notes];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
+  const generateNoteQueue = () => {
     const path = window.location.pathname;
     let notes = [...baseNotes];
 
-    // Context-aware sass
+    // Context-aware add-ons
     if (path.includes("/blog")) {
       notes.push("Oh look, another roast. Don’t say I didn’t warn you.");
     } else if (path.includes("/about")) {
@@ -48,24 +62,26 @@ function LumasNotes() {
       notes.push("Contacting Erika? Bold. She bites.");
     }
 
-    let randomIndex;
-    let attempts = 0;
+    return shuffleNotes(notes);
+  };
 
-    do {
-      randomIndex = Math.floor(Math.random() * notes.length);
-      attempts++;
-    } while (randomIndex === previousIndex && attempts < 10);
+  const showNextNote = () => {
+    let updatedQueue = [...noteQueue];
 
-    setPreviousIndex(randomIndex);
-    setCurrentNote(notes[randomIndex]);
+    if (updatedQueue.length === 0) {
+      updatedQueue = generateNoteQueue();
+    }
+
+    const next = updatedQueue.shift(); // Get and remove the first note
+    setNoteQueue(updatedQueue);
+    setCurrentNote(next);
   };
 
   useEffect(() => {
     if (isOpen) {
-      generateRandomNote();
+      showNextNote();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isOpen]); // ✅ no warning now, Netlify-safe
+  }, [isOpen]);
 
   return (
     <div className={`luma-notes-container ${isOpen ? "open" : ""}`}>
