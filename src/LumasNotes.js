@@ -106,11 +106,19 @@ useEffect(() => {
     }
   }, [noteQueue]);
 
-  useEffect(() => {
-    if (isOpen) {
-      showNextNote();
-    }
-  }, [isOpen, showNextNote]);
+ useEffect(() => {
+   if (!isOpen) return;
+
+   if (noteQueue.length === 0) {
+     const newQueue = generateNoteQueue(location.pathname);
+     setNoteQueue(newQueue.slice(1));
+     setCurrentNote(newQueue[0]);
+   } else {
+     const next = noteQueue[0];
+     setCurrentNote(next);
+     setNoteQueue((prev) => prev.slice(1));
+   }
+ }, [isOpen, location.pathname, generateNoteQueue]);
 
   return (
     <div className={`luma-notes-container ${isOpen ? "open" : ""}`}>
