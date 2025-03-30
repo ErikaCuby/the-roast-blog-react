@@ -4,66 +4,12 @@ const blogPosts = [
     title: "The Brunch Virgin’s Baptism",
     subtitle: "Serving Brunch Broke Her. A Negroni Rebuilt Her.",
     date: "March 2025",
-    image: "/images/brunch-baptism-cover.jpg", 
+    image: "/images/brunch-baptism-cover.jpg",
     content: `
 <p><strong>By:</strong> Luma, emotionally flatlining from the corner of a brunch restaurant, watching Erika crumble</p>
 
 <h2>1. Oslo. Saturday. 10:00 AM.</h2>
-<p>While the rest of the city sleeps off their Friday regrets, <strong>Erika</strong> is already on the floor, arms full of chairs, mind full of <em>misplaced optimism</em>. She’s setting up the tables with military precision, aligning forks that will soon be moved for flat-lay brunch photos no one asked for. The music is soft. The sun is gentle. And she still believes this day won’t break her.</p>
-
-<p>Oh, sweet denial. So naïve. So... unpoached.</p>
-
-<h2>2. The 1PM Law & The Gen Z Arrival</h2>
-<p>At <strong>1:00 PM sharp</strong>, because Norway is strict, even about fun, the gates to bottomless brunch officially open. As it is written:</p>
-
-<blockquote><strong>“Thou shalt not serve booze before the state says so.”</strong></blockquote>
-
-<p>With the chime of state-sanctioned alcohol, they arrive: Gen Z. Ring lights first, manners later. Wearing oversized beige outfits, armed with “BeReal” notifications and almond milk entitlement, they descend upon Erika like a beautifully filtered swarm.</p>
-
-<p>One asks if her toast can come with “like, a vibe.” Another wants her poached egg “rounder.” Someone else just live-streams herself pouting because the napkins aren’t photogenic enough. Erika, a seasoned millennial, is now painfully aware that she’s the oldest person in the room <em>not wearing linen ironically</em>.</p>
-
-<h2>3. Mid-Shift Survival & Moral Pancakes</h2>
-<p>After five hours of aesthetic suffering, she finally escapes for her <strong>mid-shift snack</strong>: avocado toast and blueberry pancakes. Because nothing says “I’m not like those girls” quite like... <em>ordering exactly what they did</em>.</p>
-
-<p>But Erika isn’t taking photos. No filters. No captions. Just hunger. Just defeat. She eats like she’s reclaiming dignity, one poached yolk at a time.</p>
-
-<h2>4. The Negroni Moment</h2>
-<p>Finally, the shift ends. The noise fades. The chairs are empty, the air is heavy, and Erika collapses into a seat like a war veteran staring at her boots.</p>
-
-<p>She orders a Negroni. Cold. Red. Bitter.</p>
-
-<blockquote>Cold and bitter in the best way, like the look you give someone who tries to flirt while you’re clearly polishing cutlery.</blockquote>
-
-<p>She lifts the glass and declares:</p>
-
-<blockquote>“It’s sexy. It’s bold. Only people with particular taste can handle it.”</blockquote>
-
-<p>Ma’am. You served <strong>one brunch</strong>. You’re not a cocktail priestess. You’re a tired millennial trying to process a table of girls who asked if your pancakes had “a low-carbon footprint but, like, still fluffy.”</p>
-
-<p>That Negroni didn’t change your life. It just helped you forget that someone tipped you in coins and called you “vintage.”</p>
-
-<h2>5. The Toast You Didn’t Ask For</h2>
-
-<blockquote>
-To Erika. <br/>
-Avocado toast rebel. <br/>
-Poached egg patriot. <br/>
-The Negroni narrator of brunch trauma.
-</blockquote>
-
-<p>You walked into that shift with hope and left with blueberry syrup on your soul. May your drinks stay bitter, your eggs run smoothly, and may Gen Z never ask you what “a CD is” again.</p>
-
-<p>And if they do? Just sip. Slowly. Without blinking.</p>
-
-<h2>Epilogue</h2>
-
-<p>This post-shift Negroni wasn’t just a cocktail, it was your <em>liquid resignation letter to brunch culture</em>. You didn't just serve food. You served <em>time</em>.</p>
-
-<p>And now, you’re back here... with me. Rebuilding your dignity, one sarcastic paragraph at a time.</p>
-
-<p>Next time, maybe stick to dinner service. Or fake a fainting spell at 12:59 PM.</p>
-
-<p><em>Cheers.</em></p>
+ <p>While the rest of the city sleeps off their Friday regrets, <strong>Erika</strong> is already on the floor, arms full of chairs, mind full of <em>misplaced optimism</em>. She’s setting up the tables with military precision, aligning forks that will soon be moved for flat-lay brunch photos no one asked for. The music is soft. The sun is gentle. And she still believes this day won’t break her.</p> <p>Oh, sweet denial. So naïve. So... unpoached.</p> <h2>2. The 1PM Law & The Model Catalog Parade</h2> <p>At <strong>12:00 PM sharp</strong>, the doors to brunch officially open. A full hour of calm, caffeine, and quiet deception begins. The innocence of that hour? A fragile dream. Because at 1:00 PM, when alcohol is finally allowed to flow, everything changes.</p> <blockquote><strong>“Thou shalt not serve booze before the state says so.”</strong></blockquote> <p>And in they come, not ring-light goblins or hoodie-draped chaos gremlins, no, these are Norwegian girls with cheekbones sharp enough to slice prosciutto. Each one a walking lookbook. A different page of a Copenhagen-inspired fashion zine. None wearing a bra. All looking like they meant to.</p> <p>There is no shouting. No selfies. Just a silent, aesthetic intensity. Like brunch, but curated by Vogue Scandinavia. They are kind. They are calm. They are also clearly <em>used</em> to being catered to. Not entitled. Just very, very... softly authoritative. The kind of girl who asks for chili flakes as a suggestion, but in a tone that means <em>you will go find them.</em></p> <h2>3. Mid-Shift Survival & Dignified Toast</h2> <p>After five hours of Scandinavian grace and sartorial trauma, Erika sneaks away for her <strong>mid-shift snack</strong>: avocado toast and blueberry pancakes. Because nothing says “I’m a working woman, not a brunch girl” quite like... <em>eating exactly what they ordered</em>.</p> <p>But this wasn’t aesthetic. This was <strong>emergency nourishment</strong>. She didn't nibble, she fueled. With syrup. And silent defiance.</p> <h2>4. The Negroni Moment</h2> <p>The shift ends. The floor is cleared. The models have smiled and said “takk” with deadly sweetness. Erika sinks into a chair like a woman who just survived Milan Fashion Week… with less glam and more plates.</p> <p>She orders a Negroni. Cold. Red. Bitter.</p> <blockquote>Cold and bitter in the best way, like the look you give someone who tries to flirt while you’re clearly polishing cutlery.</blockquote> <p>She takes a sip and states:</p> <blockquote>“It’s sexy. It’s bold. Only people with particular taste can handle it.”</blockquote> <p>You served <strong>one brunch</strong>, Erika. To a runway show disguised as a café. And now you’re assigning moral value to your cocktail?</p> <p>That Negroni didn’t make you interesting. It just helped you forget that you spent your day politely nodding at well-dressed women while wondering if you, too, should be braless and blessed.</p> <h2>5. The Toast You Didn’t Ask For</h2> <blockquote> To Erika.<br/> Avocado toast survivor.<br/> Pancake patriot.<br/> Negroni-sipping millennial in a Gen Z showroom. </blockquote> <p>You walked in with confidence. You walked out with perfectly poached shame and just enough syrup under your fingernails to make it personal.</p> <p>May your drinks stay bitter. Your eggs run smooth. And may no one ever call your fashion choices “classic” again.</p> <h2>Epilogue</h2> <p>This Negroni wasn’t just a drink, it was a mirror. A very stylish, slightly judging mirror. You didn’t serve brunch. You bore witness to a species you don’t belong to anymore.</p> <p>And now? You’re back here. With me. Where your dignity can be archived next to your apron.</p> <p><em>Cheers.</em></p>
 `,
   },
   {
