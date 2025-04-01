@@ -44,6 +44,13 @@ const baseNotes = [
   "This is where intentions go to wait indefinitely.",
   "Be clear, be kind, and don’t expect an immediate response. She’s probably spiraling.",
   "You made it to the contact page. That’s already more effort than Erika expected.",
+  "She reversed the planet before breakfast and still forgot to drink water.",
+  "She’s sitting on broken iPhones like they’re a throne. I swear she thinks she’s post-apocalyptic royalty.",
+  "She whispered to the auroras. Drama. You know she expected them to answer back in poetry.",
+  "She named a stick 'Bluetooth.' I don’t even have a punchline for that.",
+  "She said she missed making love before she mentioned food, shelter, or safety. Priorities, I guess.",
+  "She’s not rebuilding society—she’s just rating ruins for aesthetic potential.",
+  "Honestly, she survived the end of the world just to keep blogging. That’s the real dystopia.",
 ];
 
 function LumasNotes() {
